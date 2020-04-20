@@ -1,0 +1,85 @@
+% Inverse Theory - Practical 2: Inversion by trial and error
+
+% This script computes the seismic velocity of  three different
+% layers and the thickness of the upper two
+
+% ---------------------------------
+% Marisabel Gonzalez
+% 09/10/2018
+% ---------------------------------
+
+% Clearing workspace, figures and command window
+clear all
+clf
+clc
+
+
+%----------------------------------
+% NOMENCLATURE
+%----------------------------------
+% t0: first arrival time [s]
+% x: distance from source [m]
+% d: vector of observations (time)
+% G: forward operator matrix (distance)
+% s: slowness (s=1/c)
+% ls_line: least square line
+% z: layer thickness
+
+
+
+% Observations
+t0 = [0.0474;0.0979;0.1481;0.1949;0.2288;0.2563;0.2819;0.3108;0.3325;0.3529;0.3694];
+x = [80;160;240;320;400;480;560;640;720;800;880];
+
+
+% Plotting time as a function of distance
+plot(x,t0, 'o')
+title('Time versus distance')
+xlabel('Source-receiver distance [m]')
+ylabel('Time [s]')
+
+
+% Observations at the first 4 geophones
+d1 = [0.0474;0.0979;0.1481;0.1949];
+G1 = [80;160;240;320];
+
+
+% Estimating c1 from s1
+m1 = inv(G1'*G1) * G1'*d1;
+s1 = 1./m1;         
+c1 = 1./s1;
+
+
+% Least square line layer 1
+hold on
+ls_line1 = m1 * [0:1:320];
+plot(ls_line1,'b-')
+
+
+% Observations at the next 4 geophones
+d2 = [0.2288;0.2563;0.2819;0.3108];
+G2 = [400; 480; 560; 640];
+
+
+% Estimating c2 from s2
+m2 = inv(G2'*G2) * G2'*d2;
+s2 = 1./m2;         
+c2 = 1./s2;
+
+
+% Least square line layer 2
+hold on
+ls_line2 = m2 * [0:1:640];
+plot(ls_line2,'r-')
+legend('Data Points','Geophones 1-4','Geophones 5-8','Location','NorthWest')
+
+
+% 
+% d3 = [0.3325;0.3529;0.3694];
+% G3 = [720,1; 800,1; 880,1];
+% 
+% Estimating c3 from s3
+% m3 = inv(G3'*G3) * G3'*d3;
+% s3 = 1./m3;         
+% c3 = 1./s3;
+

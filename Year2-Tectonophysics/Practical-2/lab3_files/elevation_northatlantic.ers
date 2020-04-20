@@ -1,0 +1,49 @@
+DatasetHeader Begin
+	Version		= "7.1"
+	Name		= "elevation_northatlantic.ers"
+	LastUpdated	= Mon Jan 28 21:31:42 GMT 2013
+	DataSetType	= ERStorage
+	DataType	= Raster
+	ByteOrder	= LSBFirst
+	CoordinateSpace Begin
+		Datum		= "WGS84"
+		Projection	= "GEODETIC"
+		CoordinateType	= EN
+		Units		= "dd"
+		Rotation	= 0:0:0.0
+	CoordinateSpace End
+	RasterInfo Begin
+		CellType	= IEEE4ByteReal
+		NullCellValue	= 0
+		CellInfo Begin
+			Xdimension	= 0.033333333333333978
+			Ydimension	= 0.033333333333333978
+		CellInfo End
+		NrOfLines	= 1800
+		NrOfCellsPerLine	= 2400
+		RegistrationCoord Begin
+			Eastings	= -79.99999999999801
+			Northings	= 59.999999999999403
+		RegistrationCoord End
+		NrOfBands	= 1
+		BandId Begin
+			Value		= "Pseudo Layer"
+		BandId End
+		RegionInfo Begin
+			Type		= Polygon
+			RegionName	= "All"
+			SourceDataset	= "elevation_northatlantic"
+			RGBcolour Begin
+				Red			= 65535
+				Green		= 65535
+				Blue		= 65535
+			RGBcolour End
+			SubRegion	= {
+				0	0
+				0	1800
+				2400	1800
+				2400	0
+			}
+		RegionInfo End
+	RasterInfo End
+DatasetHeader End

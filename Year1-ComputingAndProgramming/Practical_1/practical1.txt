@@ -1,0 +1,68 @@
+
+Editor war is the common name for the rivalry between users of the vi
+and Emacs text editors. The rivalry has become a lasting part of hacker
+culture and the free software community.
+
+Many flame wars have been fought between groups insisting that their editor
+of choice is the paragon of editing perfection, and insulting the others.
+Unlike the related battles over operating systems, programming languages,
+and even source code indent style, choice of editor usually only affects
+oneself.
+
+Benefits of vi-like editors
+
+1. Historically, vi is faster than Emacs.
+2. Runs on all systems that can implement the standard C library, including
+UNIX, Linux, AmigaOS, DOS, Windows, Mac, BeOS, and POSIX-compliant systems.
+3. Allows users of the QWERTY keyboard to keep their fingers on the home row,
+thus requiring less movement and less time to edit.
+4. Ubiquitous. Essentially all Unix and Unix-like systems come with vi (or a
+variant) built-in.
+
+Benefits of Emacs
+
+1. One of the most ported non-trivial computer programs. It runs on a wide
+variety of operating systems, including most Unix-like systems (GNU/Linux,
+the various BSDs, Solaris, AIX, IRIX, AmigaOS, Mac OS X etc.), MS-DOS,
+Microsoft Windows and OpenVMS. Unix systems, both free and proprietary,
+frequently provide Emacs bundled with the operating system.
+2. Extensible and customizable, with features that include:
+  a. Ability to emulate vi (known as "viper-mode").
+  b. A powerful and extensible file manager (dired), integrated debugger,
+  and a large set of tools to work with.
+
+Taken from: http://en.wikipedia.org/wiki/Editor_war
+
+Editor war is the common name for the rivalry between users of the vi 
+and Emacs text editors. The rivalry has become a lasting part of hacker 
+culture and the free software community.
+
+Many flame wars have been fought between groups insisting that their editor 
+of choice is the paragon of editing perfection, and insulting the others. 
+Unlike the related battles over operating systems, programming languages, 
+and even source code indent style, choice of editor usually only affects 
+oneself.
+
+Benefits of vi-like editors
+
+1. Historically, vi is faster than Emacs.
+2. Runs on all systems that can implement the standard C library, including 
+UNIX, Linux, AmigaOS, DOS, Windows, Mac, BeOS, and POSIX-compliant systems.
+3. Allows users of the QWERTY keyboard to keep their fingers on the home row, 
+thus requiring less movement and less time to edit.
+4. Ubiquitous. Essentially all Unix and Unix-like systems come with vi (or a 
+variant) built-in.
+
+Benefits of Emacs
+
+1. One of the most ported non-trivial computer programs. It runs on a wide 
+variety of operating systems, including most Unix-like systems (GNU/Linux, 
+the various BSDs, Solaris, AIX, IRIX, AmigaOS, Mac OS X etc.), MS-DOS, 
+Microsoft Windows and OpenVMS. Unix systems, both free and proprietary, 
+frequently provide Emacs bundled with the operating system.
+2. Extensible and customizable, with features that include:
+  a. Ability to emulate vi (known as "viper-mode").
+  b. A powerful and extensible file manager (dired), integrated debugger, 
+  and a large set of tools to work with.
+
+Taken from: http://en.wikipedia.org/wiki/Editor_war

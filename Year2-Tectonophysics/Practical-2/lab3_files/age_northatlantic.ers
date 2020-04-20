@@ -1,0 +1,49 @@
+DatasetHeader Begin
+	Version		= "7.1"
+	Name		= "age_northatlantic2.ers"
+	LastUpdated	= Mon Jan 28 21:51:47 GMT 2013
+	DataSetType	= ERStorage
+	DataType	= Raster
+	ByteOrder	= LSBFirst
+	CoordinateSpace Begin
+		Datum		= "WGS84"
+		Projection	= "GEODETIC"
+		CoordinateType	= EN
+		Units		= "dd"
+		Rotation	= 0:0:0.0
+	CoordinateSpace End
+	RasterInfo Begin
+		CellType	= IEEE4ByteReal
+		NullCellValue	= -1
+		CellInfo Begin
+			Xdimension	= 0.033333299999999962
+			Ydimension	= 0.033333299999999962
+		CellInfo End
+		NrOfLines	= 1800
+		NrOfCellsPerLine	= 2400
+		RegistrationCoord Begin
+			Eastings	= -80.000100000000003
+			Northings	= 60.000029999999995
+		RegistrationCoord End
+		NrOfBands	= 1
+		BandId Begin
+			Value		= "Pseudo Layer"
+		BandId End
+		RegionInfo Begin
+			Type		= Polygon
+			RegionName	= "All"
+			SourceDataset	= "age_northatlantic2"
+			RGBcolour Begin
+				Red			= 65535
+				Green		= 65535
+				Blue		= 65535
+			RGBcolour End
+			SubRegion	= {
+				0	0
+				0	1800
+				2400	1800
+				2400	0
+			}
+		RegionInfo End
+	RasterInfo End
+DatasetHeader End
